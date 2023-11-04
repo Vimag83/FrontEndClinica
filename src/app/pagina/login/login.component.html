@@ -1,1 +1,26 @@
 <p>login works!</p>
+<body>
+    <div class="container">
+        <h2>Pagina de Inicio de Sesión</h2>
+        <h3>Iniciar Sesión</h3>
+        <form action="menu.html" method="post">
+            
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <a href="recuperar-contrasena.html">¿Olvidaste tu contraseña?</a>
+            <br><br>
+
+            <div class="btn-container">
+                <input type="submit" value="Iniciar Sesión">
+                <input type="reset" value="Cancelar">
+            </div>
+
+            <br>
+            <a href="inicio.component.html">Ir a Inicio</a>
+        </form>
+    </div>
+</body>
