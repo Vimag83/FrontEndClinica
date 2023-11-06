@@ -8,6 +8,11 @@ import { InicioComponent } from './pagina/inicio/inicio.component';
 import { LoginComponent } from './pagina/login/login.component';
 import { RegistroComponent } from './pagina/registro/registro.component';
 import { GestionPqrsComponent } from './pagina/gestion-pqrs/gestion-pqrs.component';
+import { CrearPqrsComponent } from './pagina/crear-pqrs/crear-pqrs.component';
+import { DetallePqrsComponent } from './pagina/detalle-pqrs/detalle-pqrs.component';
+import { CrearCitaComponent } from './pagina/crear-cita/crear-cita.component';
+import { GestionarCitaComponent } from './pagina/gestionar-cita/gestionar-cita.component';
+import { DetalleCitaComponent } from './pagina/detalle-cita/detalle-cita.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { GestionPqrsComponent } from './pagina/gestion-pqrs/gestion-pqrs.compone
     InicioComponent,
     LoginComponent,
     RegistroComponent,
-    GestionPqrsComponent
+    GestionPqrsComponent,
+    CrearPqrsComponent,
+    DetallePqrsComponent,
+    CrearCitaComponent,
+    GestionarCitaComponent,
+    DetalleCitaComponent
   ],
   imports: [
     BrowserModule,

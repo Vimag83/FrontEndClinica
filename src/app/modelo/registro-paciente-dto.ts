@@ -1,4 +1,5 @@
 export class RegistroPacienteDTO {
+    
     cedula:string = "";
     nombre:string = "";
     telefono:string = "";
