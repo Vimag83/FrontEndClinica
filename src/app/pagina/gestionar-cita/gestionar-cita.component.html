@@ -20,10 +20,10 @@
           <tr>
 
             <th>Código Cita</th>
-            <th>Código Paciente</th>
             <th>Fecha </th>
-            <th>Código Medico</th>
+            <th>Nombre Medico</th>
             <th>Motivo</th>
+            <th>Estado Cita</th>
             
           </tr>
         </thead>
@@ -32,12 +32,11 @@
           <tr *ngFor="let item of cita">
               
             <td><p>{{ item.codigoCita }}</p></td>
-            <td><p>{{ item.codigoPaciente }}</p></td>
             <td><p>{{ item.fecha }}</p></td>
-            <td><p>{{ item.codigoMedico }}</p></td>
+            <td><p>{{ item.nombreMedico }}</p></td>
             <td><p>{{ item.motivo }}</p></td>
-            <td><span [ngClass]=" item.estado == 'ACTIVO' ? 'text-bg-success' : 'text-bg-danger'
-                "class="badge">{{ item.estado }}</span></td>
+            <td><span [ngClass]=" item.estadoCita == 'ACTIVO' ? 'text-bg-success' : 'text-bg-danger'
+                "class="badge">{{ item.estadoCita }}</span></td>
             <td><a routerLink="/detalle-cita/{{ item.codigoCita }}">
               <i class="fa-solid fa-circle-info me-2"></i>Ver detalle</a></td>
   
@@ -46,3 +45,6 @@
       </table>
     </div>
   </div>
+
+  
+  

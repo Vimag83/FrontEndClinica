@@ -13,6 +13,7 @@ import { DetallePqrsComponent } from './pagina/detalle-pqrs/detalle-pqrs.compone
 import { CrearCitaComponent } from './pagina/crear-cita/crear-cita.component';
 import { GestionarCitaComponent } from './pagina/gestionar-cita/gestionar-cita.component';
 import { DetalleCitaComponent } from './pagina/detalle-cita/detalle-cita.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
