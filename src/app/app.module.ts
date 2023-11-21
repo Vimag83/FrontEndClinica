@@ -14,6 +14,7 @@ import { CrearCitaComponent } from './pagina/crear-cita/crear-cita.component';
 import { GestionarCitaComponent } from './pagina/gestionar-cita/gestionar-cita.component';
 import { DetalleCitaComponent } from './pagina/detalle-cita/detalle-cita.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GestionMedicosComponent } from './pagina/gestion-medicos/gestion-medicos.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +27,18 @@ import { HttpClientModule } from '@angular/common/http';
     DetallePqrsComponent,
     CrearCitaComponent,
     GestionarCitaComponent,
-    DetalleCitaComponent
+    DetalleCitaComponent,
+    GestionMedicosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }

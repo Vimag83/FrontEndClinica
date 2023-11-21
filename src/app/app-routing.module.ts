@@ -9,6 +9,7 @@ import { DetallePqrsComponent } from './pagina/detalle-pqrs/detalle-pqrs.compone
 import { GestionarCitaComponent} from './pagina/gestionar-cita/gestionar-cita.component';
 import { CrearCitaComponent } from './pagina/crear-cita/crear-cita.component';
 import { DetalleCitaComponent } from './pagina/detalle-cita/detalle-cita.component';
+import { GestionMedicosComponent } from './pagina/gestion-medicos/gestion-medicos.component';
 
 const routes: Routes = [
   { path: " ", component: InicioComponent},
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: "gestionar-cita", component: GestionarCitaComponent },
   { path: "crear-cita", component: CrearCitaComponent },
   { path: "detalle-cita/:codigo", component: DetalleCitaComponent },
+  { path: "gestion-medicos", component: GestionMedicosComponent },
   
   { path: "**", pathMatch: "full", redirectTo:""}
   
